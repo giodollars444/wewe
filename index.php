@@ -657,6 +657,30 @@ if ($fasce_count == 0) {
             transform: translateX(5px);
         }
 
+        /* Verify Link */
+        .verify-link {
+            text-align: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-primary);
+        }
+
+        .verify-link a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .verify-link a:hover {
+            color: #3b82f6;
+            transform: translateX(5px);
+        }
+
         /* Services Preview */
         .services-preview {
             margin-top: 3rem;
@@ -1146,6 +1170,13 @@ if ($fasce_count == 0) {
                 <a href="cancel_booking.php">
                     <i class="fas fa-times-circle"></i>
                     Cancella una prenotazione
+                </a>
+            </div>
+
+            <div class="verify-link">
+                <a href="verify_booking.php">
+                    <i class="fas fa-search"></i>
+                    Verifica Prenotazioni
                 </a>
             </div>
         </div>
